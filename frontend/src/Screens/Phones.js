@@ -7,7 +7,6 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 function Phones() {
 
     const [phones,setPhones] = useState([])
-    const [searchParam,setSearch] = useState("")
   
     const getPhones = async() => {
       const result = await fetchPhones()
