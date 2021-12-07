@@ -27,7 +27,7 @@ function PhoneCard(props) {
                             backgroundColor: '#CAC1BE'}}>
             <Card.Img style={{height: 275,width: 307,resizeMode: 'contain',borderRadius: 30,padding: 10}} variant="top" src={props.image} />
             <Card.Body>
-                <Card.Title style={{marginLeft:"40px"}}>{props.name}</Card.Title>
+                <Card.Title style={{marginLeft:"37px"}}>{props.name}</Card.Title>
             <Button style={{margin:10}} variant="dark" onClick={() =>{deleteById(props.id)}}>✘</Button>
             <Button variant="dark"  onClick={handleRoute}>Details</Button>
             </Card.Body>
