@@ -1,4 +1,3 @@
-import './App.css';
 import PhoneList from './components/PhoneList';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Phones from './Screens/Phones';
