@@ -1,6 +1,7 @@
 import React, {useState,updateState} from 'react'
 import {addNewPhones} from "../apiService"
 import { Button} from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 function AddPhones() {
@@ -19,6 +20,8 @@ function AddPhones() {
     const [newState,setNewstate] = useState(null)
 
     const [image,setImage] = useState("")
+
+    const navigate = useNavigate();
 
     const input = {
       padding: 15,
@@ -95,6 +98,7 @@ function AddPhones() {
         const newState = {...state, imageFileName: data.url};
         setState(newState);
         const working =  addNewPhones(newState)
+        navigate("/")
         })
           .catch((err) => console.log(err));
     }
