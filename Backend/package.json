@@ -16,5 +16,8 @@
     "nodemon": "^2.0.15",
     "express" : "*",
     "cors" : "*"
+  },
+  "engines": {
+    "node": "16.9.0"
   }
 }
