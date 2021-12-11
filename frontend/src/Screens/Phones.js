@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { fetchPhones } from '../apiService';
+import {fetchPhones}  from '../apiService';
 import PhoneList from '../components/PhoneList';
 import { Button, Card,Row,Col, Container} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css'

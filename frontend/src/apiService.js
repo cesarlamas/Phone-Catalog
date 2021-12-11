@@ -11,8 +11,6 @@ exports.fetchOnePhone = async(id) => {
 }
 
 exports.addNewPhones = async (phone) => {
-    console.log("executing the add http call")
-    console.log(Date.now())
     const res = await fetch("http://localhost:3001/phones", {
         method: "POST",
         body : JSON.stringify(phone),
@@ -20,8 +18,6 @@ exports.addNewPhones = async (phone) => {
             'content-Type' : 'application/json'
         }
     });
-    console.log("returning res in json")
-    console.log(Date.now())
     return await res.json();
 }
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
-import { deleteById } from '../apiService'
+import deleteById  from '../apiService'
 import { Button, Card,Row,Col, Container} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
