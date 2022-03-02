@@ -1,4 +1,4 @@
-const PHONE_URL = "https://backend-cesarlamas.cloud.okteto.net/phones"
+const PHONE_URL = "http://localhost:3001/phones"
 
 exports.fetchPhones = async() =>  {
     const phones = await fetch(PHONE_URL)
@@ -11,7 +11,7 @@ exports.fetchOnePhone = async(id) => {
 }
 
 exports.addNewPhones = async (phone) => {
-    const res = await fetch("https://backend-cesarlamas.cloud.okteto.net/phones", {
+    const res = await fetch(`${PHONE_URL}`, {
         method: "POST",
         body : JSON.stringify(phone),
         headers : {

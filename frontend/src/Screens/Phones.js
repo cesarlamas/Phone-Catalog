@@ -12,6 +12,8 @@ function Phones() {
       const result = await fetchPhones()
       setPhones(result)
     }
+
+    console.log("this is the pones", phones)
   
     useEffect(() => {
       getPhones()
